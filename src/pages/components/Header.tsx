@@ -1,24 +1,26 @@
 import Image from "next/image";
-import zzlogo from '../../../public/Images/Logos/ZZLOGO.png';
-import icon_local from '../../../public/Images/Icons/icon-local.svg';
-import icon_favorite from '../../../public/Images/Icons/icon-favorite.svg';
-import icon_people from '../../../public/Images/Icons/icon-people.svg';
-import icon_bag from '../../../public/Images/Icons/icon-bag.svg';
+import zzlogo from '/public/Images/Logos/ZZLOGO.png';
+import icon_local from '/public/Images/Icons/icon-local.svg';
+import icon_favorite from '/public/Images/Icons/icon-favorite.svg';
+import icon_people from '/public/Images/Icons/icon-people.svg';
+import icon_bag from '/public/Images/Icons/icon-bag.svg';
+import { navButtons } from "./utils/navButtons";
+
 
 export default function Header() {
     return (
-        <header className="bg-slate-500 w-full h-28 flex items-center justify-between px-20">
+        <header className="w-full h-28 flex items-center justify-between px-20">
             <div className="flex items-center gap-20">
                 <Image alt="arezzo-logo" src={zzlogo} width={120} height={50} />
                 <nav className="flex gap-8">
-                    <button className="btn-hover-effect">NOVIDADES</button>
-                    <button className="btn-hover-effect">SAPATOS</button>
-                    <button className="btn-hover-effect">BOTAS</button>
-                    <button className="btn-hover-effect">BOLSAS</button>
-                    <button className="btn-hover-effect">ACESSÓRIOS</button>
-                    <button className="btn-hover-effect">PROMOÇÕES</button>
+                    {navButtons.map(button => (
+                        <button key={button.id} className="btn-hover-effect">
+                            {button.text}
+                        </button>
+                    ))}
                     <div className="w-0.5 h-8 bg-black" />
                     <button className="btn-hover-effect">BRIZZA</button>
+                    <div className="w-0.5 h-8 bg-black" />
                 </nav>
             </div>
 
