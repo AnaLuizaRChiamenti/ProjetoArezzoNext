@@ -13,3 +13,7 @@
     text-wrap: balance;
   }
 }
+
+.btn-hover-effect {
+  @apply relative hover:border-b-2 hover:border-black;
+}
