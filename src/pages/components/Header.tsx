@@ -9,7 +9,7 @@ export default function Header() {
     return (
         <header className="bg-slate-500 w-full h-28 flex items-center justify-between px-20">
             <div className="flex items-center gap-20">
-                <Image alt="arezzo-logo" src={zzlogo} width={100} height={50} />
+                <Image alt="arezzo-logo" src={zzlogo} width={120} height={50} />
                 <nav className="flex gap-8">
                     <button className="btn-hover-effect">NOVIDADES</button>
                     <button className="btn-hover-effect">SAPATOS</button>
