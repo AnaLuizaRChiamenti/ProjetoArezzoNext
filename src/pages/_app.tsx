@@ -7,6 +7,7 @@ const inter = Commissioner({
   weight: ['400', '700'],
 });
 
+
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <div className={inter.className}>
