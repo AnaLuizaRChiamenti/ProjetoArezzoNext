@@ -3,12 +3,11 @@ import img_main_banner from '../../../public/Images/Banner/main_banner.png';
 
 export default function MainBanner() {
     return (
-        <div className="relative w-full h-[calc(100vh-130px)] overflow-hidden">
+        <div className="relative w-full h-screen overflow-hidden">
             <Image
                 src={img_main_banner}
                 alt="banner bolsa marrom"
-                layout="fill"
-                objectFit="cover"
+                fill
                 quality={100}
             />
         </div>

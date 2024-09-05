@@ -14,13 +14,12 @@ export default function Header() {
                 <Image alt="arezzo-logo" src={zzlogo} width={120} height={50} />
                 <nav className="flex gap-8">
                     {navButtons.map(button => (
-                        <button key={button.id} className="btn-hover-effect">
+                        <button key={button.id} className="relative hover:border-b-2 hover:border-black">
                             {button.text}
                         </button>
                     ))}
                     <div className="w-0.5 h-8 bg-black" />
-                    <button className="btn-hover-effect">BRIZZA</button>
-                    <div className="w-0.5 h-8 bg-black" />
+                    <button className="relative hover:border-b-2 hover:border-black">BRIZZA</button>
                 </nav>
             </div>
 
