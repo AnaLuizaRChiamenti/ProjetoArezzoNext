@@ -5,6 +5,8 @@ import icon_favorite from '/public/Images/Icons/icon-favorite.svg';
 import icon_people from '/public/Images/Icons/icon-people.svg';
 import icon_bag from '/public/Images/Icons/icon-bag.svg';
 import { navButtons } from "./utils/navButtons";
+import { useEffect } from "react";
+import { GetProducts } from "../api/get-products";
 
 
 export default function Header() {

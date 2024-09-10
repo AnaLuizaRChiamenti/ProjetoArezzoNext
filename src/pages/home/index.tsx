@@ -55,11 +55,13 @@ export default function MainHome() {
                 </div>
             </section>
 
-            <section className="w-full bg-gray-100 py-10">
-                <div className="mx-auto px-16">
+            <section className="w-full py-10">
+                <div className="mx-auto px-16 mb-10">
                     <div className="flex justify-between items-center">
-                        <h2 className="uppercase text-2xl tracking-widest">Apostas da semana</h2>
-                        <button className="underline text-black px-6 py-3 rounded-full text-lg">
+                        <h2 className="font-light text-2xl leading-[32px] tracking-wide text-left uppercase">
+                            Apostas da semana
+                        </h2>
+                        <button className="underline text-black px-6 py-3 rounded-full text-lg ">
                             Ver todos os produtos
                         </button>
                     </div>
