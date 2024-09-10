@@ -1,7 +1,8 @@
 import Image from "next/image";
-import img_main_banner from '../../../public/Images/Banner/main_banner.png';
-import img_second_banner from '../../../public/Images/Banner/second_banner.png';
-import img_second_banner_2 from '../../../public/Images/Banner/second_banner_2.png';
+import img_main_banner from '/public/Images/Banner/main_banner.png';
+import img_second_banner from '/public/Images/Banner/second_banner.png';
+import img_second_banner_2 from '/public/Images/Banner/second_banner_2.png';
+import Card from "../components/Card";
 
 export default function MainHome() {
     return (
@@ -53,6 +54,19 @@ export default function MainHome() {
                     </div>
                 </div>
             </section>
+
+            <section className="w-full bg-gray-100 py-10">
+                <div className="mx-auto px-16">
+                    <div className="flex justify-between items-center">
+                        <h2 className="uppercase text-2xl tracking-widest">Apostas da semana</h2>
+                        <button className="underline text-black px-6 py-3 rounded-full text-lg">
+                            Ver todos os produtos
+                        </button>
+                    </div>
+                </div>
+                <Card />
+            </section>
+
         </>
     );
 }
