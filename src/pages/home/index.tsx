@@ -3,6 +3,7 @@ import img_main_banner from '/public/Images/Banner/main_banner.png';
 import img_second_banner from '/public/Images/Banner/second_banner.png';
 import img_second_banner_2 from '/public/Images/Banner/second_banner_2.png';
 import Card from "../components/Card";
+import Footer from "../components/Footer";
 
 export default function MainHome() {
     return (
@@ -12,9 +13,9 @@ export default function MainHome() {
                     src={img_main_banner}
                     alt="banner bolsa marrom"
                     fill
-                    className="relative z-0"
+                    className="absolute inset-0 object-cover"
                 />
-                <button className="uppercase absolute bottom-10 mb-5 left-1/2 transform -translate-x-1/2 bg-transparent border-2 border-white text-white px-8 py-4 rounded-full shadow-lg hover:bg-black z-20">
+                <button className="uppercase absolute bottom-10 left-1/2 transform -translate-x-1/2 bg-transparent border-2 border-white text-white px-8 py-4 rounded-full shadow-lg hover:bg-black z-20">
                     Confira
                 </button>
                 <div className="absolute bottom-0 left-0 w-full bg-black text-white text-center py-2 z-10">
@@ -68,7 +69,7 @@ export default function MainHome() {
                 </div>
                 <Card />
             </section>
-
+            <Footer />
         </>
     );
 }
